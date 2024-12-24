@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WebAI</h1>
+        <label for="apiKey">Hugging Face Free API Key (Used for AI response. Required):</label>
+        <input type="text" id="apiKey" placeholder="Enter your Hugging Face API key">
+
+        <label for="pastebinId">Pastebin File ID(This is if you dont want to sit 20 minutes with remote and type in api key :D):</label>
+        <input type="text" id="pastebinId" placeholder="DO NOT USE BURN AFTER READ">
+        <button onclick="importApiKey()">Import API Key With Pastebin</button>
+
+        <select id="modelSelect">
+            <option value="Qwen/Qwen2.5-72B-Instruct">Qwen2.5-72B-Instruct</option>
+            <option value="mistralai/Mistral-7B-Instruct-v0.3">Mistral-7B-Instruct-v0.3</option>
+        </select>
+        <button id="voiceButton" onclick="startRecognition()">Start Voice Recognition</button>
+        <button id="clearChatButton">Clear Chat</button>
+        <p id="transcription">Transcription: </p>
+        <div id="chatHistory">
+            <h2>Chat History</h2>
+            <ul id="chatList"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="webOSTVjs-1.2.4/webOSTV.js" charset="utf-8"></script>
+    <script src="webOSTVjs-1.2.4/webOSTV-dev.js" charset="utf-8"></script>
+    <script src="mespeak/mespeak-core.js"></script>
+    <script src="mespeak/mespeak.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
