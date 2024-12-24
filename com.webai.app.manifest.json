@@ -1,0 +1,11 @@
+{
+    "id": "com.webai.app",
+    "version": "0.1.0",
+    "vendor": "justablock",
+    "type": "web",
+    "main": "index.html",
+    "title": "WebAI",
+    "bgColor": "#1e1e1e",
+    "description": "An AI assistant for LG devices/TVs with webOS.",
+    "resolution": "1920x1080"
+  }
